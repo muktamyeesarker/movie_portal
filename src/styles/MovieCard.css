@@ -1,0 +1,53 @@
+.MovieCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.MovieCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.MovieImage {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.MovieInfo {
+  width: 100%;
+}
+
+.MovieTitle {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.MovieReleaseYear,
+.MovieRating {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.MoviesGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Creates a flexible grid layout */
+  grid-gap: 20px; /* Adjust spacing between grid items */
+  padding: 20px; /* Adds padding around the grid */
+  justify-content: center; /* Centers the grid items if they don't fill a full row */
+}

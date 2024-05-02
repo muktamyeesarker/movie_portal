@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Adds vertical spacing */
+}
+
+.pagination button {
+  padding: 8px 16px; /* Adjust padding to make buttons larger */
+  font-size: 16px; /* Makes text bigger and easier to read */
+  color: white; /* Text color */
+  background-color: #007bff; /* Blue background */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  margin: 0 5px; /* Spacing between buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.pagination button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.pagination button:disabled {
+  background-color: #ccc; /* Gray out the button when disabled */
+  color: #666; /* Darker text color for disabled state */
+  cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+}

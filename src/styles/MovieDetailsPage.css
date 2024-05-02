@@ -1,0 +1,29 @@
+* {
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Loading message styles */
+.loading {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
